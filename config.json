@@ -1,0 +1,83 @@
+{
+  "ascii": [
+    "███████╗██╗  ██╗███████╗██╗     ██╗",
+    "██╔════╝██║  ██║██╔════╝██║     ██║",
+    "███████╗███████║█████╗  ██║     ██║",
+    "╚════██║██╔══██║██╔══╝  ██║     ██║",
+    "███████║██║  ██║███████╗███████╗███████╗",
+    "╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝"
+  ],
+  "title": "Shell",
+  "username": "visitor",
+  "hostname": "Shell",
+  "password": "0000",
+  "repoLink": "https://github.com/14anirudh",
+  "social": {
+    "email": "anirudhgautam987@gmail.com",
+    "github": "https://github.com/14anirudh",
+    "linkedin": "https://www.linkedin.com/in/gautamanirudh/"
+  },
+  "aboutGreeting": "Hi!!!Welcome to the shell.",
+
+  "projects": [
+    [
+      "Flickers",
+      "OTT Application using Reactjs",
+      "https://github.com/14anirudh/OTT-Platform"
+    ],
+    [
+      "PriceWise",
+      "Web Scraping project",
+      "https://github.com/14anirudh/Web-Scraper"
+    ],
+    [
+      "Radagast",
+      "E-commerce application using Nextjs",
+      "https://github.com/14anirudh/Codeswear"
+    ],
+    [
+      "GeoVista",
+      "Geospatial Data Visualization Using Nextjs and Mapbox",
+      "https://github.com/14anirudh/geo-app-demo"
+    ]
+  ],
+
+  "skills": [
+    ["Coursework", "Computer Networks, DBMS , OOPS, Operating System"],
+    [
+      "Technologies",
+      "NextJs, ReactJs, NodeJS,MongoDB, MySQL,TaiwlindCSS,Git,Firebase, REST APIs"
+    ],
+    ["Languages", "Java, C/C++, Javascript"]
+  ],
+  "experience": [
+    ["SDE Intern", "Finvestfx(01/24 - present)"],
+    ["Full Stack Developer", "Outshade Digital Media(06/22 - 09/22)"],
+    ["Software Developer ", "SDC USICT(12/21 - 05/22)"]
+  ],
+  "resumeLink":["https://anirudh.vercel.app/resume"],
+ 
+  "colors": {
+    "background": "#0C0623",
+    "foreground": "#F8DDE5",
+    "banner": "#FF9951",
+    "border": {
+      "visible": true,
+      "color": "#FFADE2"
+    },
+    "prompt": {
+      "default": "#A5A7A7",
+      "user": "#FE6BC9",
+      "host": "#70FDFF",
+      "input": "#FF7685"
+    },
+    "link": {
+      "text": "#B6AAEE",
+      "highlightColor": "#FFADE2",
+      "highlightText": "#0C0623"
+    },
+    "commands": {
+      "textColor": "#FD9BDB"
+    }
+  }
+}
