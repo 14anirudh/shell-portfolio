@@ -1,14 +1,14 @@
 const helpObj = {
   commands: [
-    ["'about'", "Who made this website?"],
-    ["'experience'", "Maybe there's something interesting."],
-    ["'skills'", "Maybe there's something interesting."],
-    ["'projects'", "Maybe there's something interesting."],
-    ["'whoami'", "A perplexing question."],
-    ["'sudo'", "???"],
-    ["'repo'", "View the Github Repository."],
-    ["'banner'", "Display the banner."],
-    ["'clear'", "Clear the terminal."],
+    ["'about'", "Developed by a wizard in training, beware, it might just cast a spell on you!"],
+    ["'experience'", "Step into the Pensieve and explore the memories that shaped this website!"],
+    ["'skills'", "Wingardium Leviosa! These skills can lift any project to new heights!"],
+    ["'projects'", "This is just one Horcrux in my collection of projects! Explore more here!"],
+    ["'whoami'", "A question worthy of the Sorting Hat! Perhaps this website can offer some clues to you..."],
+    ["'sudo'", "Woah there! Unleashing ultimate power requires the Chosen One. Are you worthy?"],
+    ["'repo'", "Descend into the depths of the code, but beware the Basilisk within!"],
+    ["'banner'", "Mischief Managed! The banner unveils the website's secrets, but beware of hidden surprises!"],
+    ["'clear'", "Obliviate! The terminal is cleared, ready for a fresh start."],
   ],
 };
 
