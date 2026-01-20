@@ -52,9 +52,20 @@
   "skills": [
     [
       "Technologies",
-      "React.js, Next.js, Node.js, Express.js, REST APIs, MongoDB, MySQL, PostgreSQL, AWS (CodePipeline/CodeBuild/S3), Puppeteer"
+      "Built and maintained a cross-platform investment platform across Web, Android, and iOS using React.js, React Native, NodeJs. Focused on delivering consistent user experiences while integrating deeply with backend systems."
     ],
-    ["Languages", "JavaScript, Java, Go (learning)"]
+    [
+      "Backend Engineering",
+      "Proficiency in designing REST APIs and service-layer logic for complex fintech workflows. Extensive experience in Node.js and advanced aggregation pipelines using MongoDB and MySQL."
+    ],
+    [
+      "Cloud & DevOps",
+      "Deployment experience on AWS, setting up CI/CD pipelines, and supporting infrastructure scalability. Implemented blue-green deployment strategies to enable zero-downtime releases. Additionally, handled end-to-end deployment of applications to the iOS App Store and Google Play Store."
+    ],
+    [
+      "Programming Languages",
+      "Strong coding skills in JavaScript, with proficiency in Java and currently learning Go."
+    ]
   ],
   "experience": [
     {
