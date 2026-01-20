@@ -1,8 +1,8 @@
 import command from '../../config.json' assert {type: 'json'};
+import { DEFAULT_MAX_LINE_WIDTH, nbsp, wrapWords } from '../utils/textWrap';
 
 const createExperience = () : string[] => {
   const experience : string[] = [];
-  const SPACE = "&nbsp;";
 
   experience.push("<br>");
 
@@ -17,8 +17,8 @@ const createExperience = () : string[] => {
       const right = ele[1] ?? "";
       let string = "";
       string += `<span class='command'>${role} </span>`;
-      string += SPACE.repeat(1);
-      string += SPACE.repeat(Math.max(1, 26 - String(role).length));
+      string += nbsp(1);
+      string += nbsp(Math.max(1, 26 - String(role).length));
       string += right;
       experience.push(string);
       return;
@@ -35,10 +35,27 @@ const createExperience = () : string[] => {
       .filter(Boolean)
       .join(" ");
 
-    experience.push(`<span class='command'>${role}</span>${SPACE.repeat(2)}${headerRight}`);
+    // Wrap the header line (role + right-side details) to avoid truncation.
+    const headerPrefixHtml = `<span class='command'>${role}</span>${nbsp(2)}`;
+    const headerPrefixLen = String(role).length + 2;
+    const headerLines = wrapWords(headerRight, DEFAULT_MAX_LINE_WIDTH - headerPrefixLen);
+    experience.push(`${headerPrefixHtml}${headerLines[0] ?? ""}`);
+    for (let i = 1; i < headerLines.length; i++) {
+      experience.push(`${nbsp(headerPrefixLen)}${headerLines[i]}`);
+    }
 
     highlights.forEach((h) => {
-      experience.push(`${SPACE.repeat(4)}- ${h}`);
+      // Wrap bullet text; keep indentation aligned under the bullet.
+      const bulletIndent = 4;
+      const bulletPrefix = "- ";
+      const bulletPrefixLen = bulletIndent + bulletPrefix.length;
+      const contPrefixLen = bulletIndent + 2; // align with text after "- "
+
+      const bulletLines = wrapWords(String(h ?? ""), DEFAULT_MAX_LINE_WIDTH - bulletPrefixLen);
+      experience.push(`${nbsp(bulletIndent)}${bulletPrefix}${bulletLines[0] ?? ""}`);
+      for (let i = 1; i < bulletLines.length; i++) {
+        experience.push(`${nbsp(contPrefixLen)}${bulletLines[i]}`);
+      }
     });
 
     experience.push("<br>");

@@ -1,20 +1,27 @@
 import command from '../../config.json' assert {type: 'json'};
+import { DEFAULT_MAX_LINE_WIDTH, nbsp, wrapWords } from '../utils/textWrap';
 
 const createTech = () : string[] => {
-  let string = "";
   const tech : string[] = [];
   const files = `${command.skills.length} File(s)`;
-  const SPACE = "&nbsp;";
 
   tech.push("<br>")
 
   command.skills.forEach((ele) => {
-    string += `<span class='command'>${ele[0]} </span>`;
-    // string += SPACE.repeat(1);
-    string += SPACE.repeat(14 - ele[0].length);
-    string += ele[1];
-    tech.push(string);
-    string = '';
+    const label = String(ele?.[0] ?? "");
+    const value = String(ele?.[1] ?? "");
+
+    const labelHtml = `<span class='command'>${label} </span>`;
+    const pad = Math.max(1, 14 - label.length);
+
+    const prefixHtml = `${labelHtml}${nbsp(pad)}`;
+    const prefixLen = label.length + pad;
+
+    const valueLines = wrapWords(value, DEFAULT_MAX_LINE_WIDTH - prefixLen);
+    tech.push(`${prefixHtml}${valueLines[0] ?? ""}`);
+    for (let i = 1; i < valueLines.length; i++) {
+      tech.push(`${nbsp(prefixLen)}${valueLines[i]}`);
+    }
     
   });
 
