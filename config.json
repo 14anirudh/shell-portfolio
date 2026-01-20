@@ -17,45 +17,80 @@
     "github": "https://github.com/14anirudh",
     "linkedin": "https://www.linkedin.com/in/gautamanirudh/"
   },
-  "aboutGreeting": "Hi!!!Welcome to the shell.",
+  "aboutGreeting": "Hi! Welcome to my shell portfolio.",
 
   "projects": [
-    [
-      "Flickers",
-      "OTT Application using Reactjs",
-      "https://github.com/14anirudh/OTT-Platform"
-    ],
-    [
-      "PriceWise",
-      "Web Scraping project",
-      "https://github.com/14anirudh/Web-Scraper"
-    ],
-    [
-      "Radagast",
-      "E-commerce application using Nextjs",
-      "https://github.com/14anirudh/Codeswear"
-    ],
-    [
-      "GeoVista",
-      "Geospatial Data Visualization Using Nextjs and Mapbox",
-      "https://github.com/14anirudh/geo-app-demo"
-    ]
+    {
+      "name": "OTT-Platform",
+      "tagline": "OTT platform (React + Node)",
+      "links": { "live": "", "github": "" },
+      "highlights": [
+        "Developed a cutting-edge OTT platform using ReactJS and NodeJS; deployed using Vercel.",
+        "Integrated TMDB API for seamless data fetching and Stripe for payments to enable personalized experiences and boost engagement."
+      ]
+    },
+    {
+      "name": "Amazon Scraper",
+      "tagline": "Scheduled web-scraping + price alerts",
+      "links": { "live": "", "github": "" },
+      "highlights": [
+        "Built a backend system to periodically scrape Amazon product data using scheduled jobs and persist pricing history in MongoDB.",
+        "Notified users of price drops via email alerts, increasing engagement and reducing manual monitoring."
+      ]
+    },
+    {
+      "name": "E-Commerce Store",
+      "tagline": "Full-stack store (Next.js + Node)",
+      "links": { "live": "", "github": "" },
+      "highlights": [
+        "Built a full-stack e-commerce platform with Next.js and Node.js.",
+        "Integrated JWT-based authentication and MongoDB-backed APIs for secure, scalable transaction handling."
+      ]
+    }
   ],
 
   "skills": [
-    ["Coursework", "Computer Networks, DBMS , OOPS, Operating System"],
     [
       "Technologies",
-      "NextJs, ReactJs, NodeJS,MongoDB, MySQL,TaiwlindCSS,Git,Firebase, REST APIs"
+      "React.js, Next.js, Node.js, Express.js, REST APIs, MongoDB, MySQL, PostgreSQL, AWS (CodePipeline/CodeBuild/S3), Puppeteer"
     ],
-    ["Languages", "Java, C/C++, Javascript"]
+    ["Languages", "JavaScript, Java, Go (learning)"]
   ],
   "experience": [
-    ["SDE Intern", "Finvestfx(01/24 - present)"],
-    ["Full Stack Developer", "Outshade Digital Media(06/22 - 09/22)"],
-    ["Software Developer ", "SDC USICT(12/21 - 05/22)"]
+    {
+      "role": "Software Development Engineer",
+      "company": "Finvestfx",
+      "dates": "Feb 2024 - Present",
+      "location": "Delhi, India",
+      "highlights": [
+        "Engineered a cross-platform Investment Platform (Web, Android, iOS) integrating MF Central, NSE, and BSE STAR MF APIs to enable quick order execution and portfolio analysis; implemented features like NAV updates and mutual-fund data synchronization for ~2,000+ schemes.",
+        "Implemented an LLM-based information-extraction pipeline to process large financial PDFs; executed parallel batch jobs with async polling and reliably wrote structured data to the DB while operating at ~10× lower cost than market alternatives.",
+        "Built and optimized CI/CD pipelines using AWS CodePipeline, CodeBuild, and S3, implementing blue-green deployments for zero-downtime releases; achieved 99.99% availability and reduced release downtime by 50%.",
+        "Developed complex reporting using advanced MongoDB aggregations (filter/group/transform Exposure & Hedge datasets); integrated automated testing with Puppeteer + Node.js, reducing manual QA by 60% and catching early-stage regressions."
+      ]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Outshade Digital Media",
+      "dates": "Jun 2022 - Sep 2022",
+      "location": "Remote, India",
+      "highlights": [
+        "Developed modules for an internal enterprise web application for PowerGrid Corporation of India using React.js, Express.js, and PostgreSQL to optimize workflows and increase operational efficiency by 30%.",
+        "Designed and implemented a system-wide notification service using RESTful APIs and global React Context, enabling event-driven centralized state updates and standardized in-app user feedback across modules."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "SDC Development Cell, USICT",
+      "dates": "Dec 2021 - May 2022",
+      "location": "Delhi, India",
+      "highlights": [
+        "Orchestrated the migration of www.jpu.ac.in from a legacy stack to modern technologies including React.js, Node.js, and PostgreSQL, improving reliability, responsiveness, and navigation; resulted in a 35% increase in site traffic.",
+        "Identified performance bottlenecks (FCP, rendering delays) by auditing frontend metrics; reworked UI components to improve efficiency by 30% and reduce user complaints by 20%."
+      ]
+    }
   ],
-  "resumeLink":["https://anirudh.vercel.app/resume"],
+  "resumeLink":[""],
  
   "colors": {
     "background": "#0C0623",
