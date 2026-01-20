@@ -7,15 +7,20 @@ const createTech = () : string[] => {
 
   tech.push("<br>")
 
+  const labels = command.skills.map((ele) => String(ele?.[0] ?? ""));
+  const maxLabelLen = labels.reduce((max, l) => Math.max(max, l.length), 0);
+  // Keep a minimum label column so short labels still look nice,
+  // but align all values to the same starting column.
+  const labelColumnWidth = Math.max(14, maxLabelLen) + 2; // +2 for spacing after label
+
   command.skills.forEach((ele) => {
     const label = String(ele?.[0] ?? "");
     const value = String(ele?.[1] ?? "");
 
-    const labelHtml = `<span class='command'>${label} </span>`;
-    const pad = Math.max(1, 14 - label.length);
-
+    const labelHtml = `<span class='command'>${label}</span>`;
+    const pad = Math.max(1, labelColumnWidth - label.length);
     const prefixHtml = `${labelHtml}${nbsp(pad)}`;
-    const prefixLen = label.length + pad;
+    const prefixLen = labelColumnWidth;
 
     const valueLines = wrapWords(value, DEFAULT_MAX_LINE_WIDTH - prefixLen);
     tech.push(`${prefixHtml}${valueLines[0] ?? ""}`);

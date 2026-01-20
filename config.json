@@ -11,7 +11,7 @@
   "username": "visitor",
   "hostname": "Shell",
   "password": "0000",
-  "repoLink": "https://github.com/14anirudh",
+  "repoLink": "https://github.com/14anirudh/shell-portfolio",
   "social": {
     "email": "anirudhgautam987@gmail.com",
     "github": "https://github.com/14anirudh",
@@ -27,6 +27,15 @@
       "highlights": [
         "Developed a cutting-edge OTT platform using ReactJS and NodeJS; deployed using Vercel.",
         "Integrated TMDB API for seamless data fetching and Stripe for payments to enable personalized experiences and boost engagement."
+      ]
+    },
+    {
+      "name": "LAMF LMS (Loan Management System)",
+      "tagline": "Full-stack LMS demo for NBFC (LAMF)",
+      "links": { "live": "", "github": "" },
+      "highlights": [
+        "Built a full-stack Loan Management System for an NBFC focused on LAMF (Lending Against Mutual Funds), covering loan products, applications, ongoing loans, and collateral (mutual fund units) management.",
+        "Designed REST APIs (for fintech partners) to create and track loan applications, with validation and MongoDB-backed persistence; built a React (Vite + Tailwind) UI with dashboards and analytics."
       ]
     },
     {
